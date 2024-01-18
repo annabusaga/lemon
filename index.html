@@ -8,134 +8,119 @@
   </head>
   <body>
     <header>
-      <div>
-        <nav>
-          <a href="./index.html">
-            <span>Food Boutique</span>
-            <svg>
-              <use
-                fill="green"
-                width="36"
-                height="36"
-                href="./images/icons/symbol-defs.svg#icon-tdesign_cabbage"
-              ></use>
-            </svg>
-          </a>
-          <a href="">
-            <svg>
-              <use
-                fill="green"
-                width="36"
-                height="36"
-                href="./images/icons/symbol-defs.svg#icon-cart"
-              ></use>
-              <span>Cart(3)</span>
-            </svg>
-          </a>
-        </nav>
-      </div>
+      <nav>
+        <a href="./index.html">
+          <span>Food Boutique</span>
+          <svg>
+            <use
+              fill="green"
+              width="36"
+              height="36"
+              href="./images/icons/symbol-defs.svg#icon-tdesign_cabbage"
+            ></use>
+          </svg>
+        </a>
+        <a href="">
+          <svg>
+            <use
+              fill="green"
+              width="36"
+              height="36"
+              href="./images/icons/symbol-defs.svg#icon-cart"
+            ></use>
+            <span>Cart(3)</span>
+          </svg>
+        </a>
+      </nav>
     </header>
     <main>
       <!-- hero -->
       <section>
-        <div>
-          <div>
-            <img
-              src="./images/hero/hero-girl.jpg"
-              alt="Girl eating healthy food"
-            />
-            <ul>
-              <li>
-                <p>#food</p>
-              </li>
-              <li>
-                <p>#products</p>
-              </li>
-            </ul>
-            <p>
-              Healthy food is an investment in your future health and
-              well-being.
-            </p>
+        <img src="./images/hero/hero-girl.jpg" alt="Girl eating healthy food" />
+        <ul>
+          <li>
+            <p>#food</p>
+          </li>
+          <li>
+            <p>#products</p>
+          </li>
+        </ul>
+        <p>
+          Healthy food is an investment in your future health and well-being.
+        </p>
+        <svg>
+          <use
+            fill="green"
+            width="36"
+            height="36"
+            href="./images/icons/symbol-defs.svg#icon-organic-food"
+          ></use>
+        </svg>
+
+        <h1>Welcome to the Food Boutique!</h1>
+        <p>
+          With Food Boutique, you're not just subscribing to food, you're
+          signing up for a fresher, fitter, and happier you.
+        </p>
+        <button type="button">Start shopping</button>
+
+        <img src="./images/hero/broccoli.png" alt="Broccoli" />
+      </section>
+
+      <section>
+        <h2>Products</h2>
+        <p>Filters</p>
+
+        <form>
+          <label for="searchProduct">Search product <sup>*</sup></label>
+          <input
+            id="searchProduct"
+            placeholder="Search for anything"
+            type="text"
+            name="productName"
+          />
+          <button type="submit">
             <svg>
               <use
                 fill="green"
                 width="36"
                 height="36"
-                href="./images/icons/symbol-defs.svg#icon-organic-food"
+                href="./images/icons/symbol-defs.svg#icon-search"
               ></use>
             </svg>
-          </div>
-          <div>
-            <h1>Welcome to the Food Boutique!</h1>
-            <p>
-              With Food Boutique, you're not just subscribing to food, you're
-              signing up for a fresher, fitter, and happier you.
-            </p>
-            <button type="button">Start shopping</button>
-          </div>
-          <div>
-            <img src="./images/hero/broccoli.png" alt="Broccoli" />
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h2>Products</h2>
-          <div>
-            <p>Filters</p>
+          </button>
+        </form>
+        <form>
+          <label for="productCategory">Sort by category</label>
+          <select name="productCategory" id="productCategory">
+            <option value="beverages">Beverages</option>
+            <option value="breadsBakery">Breads / Bakery</option>
+            <option value="dairy">Dairy</option>
+            <option value="deli">Deli</option>
+            <option value="eggs">Eggs</option>
+            <option value="freshProduce">Fresh Produce</option>
+            <option value="meatSeafood">Meat & Seafood</option>
+            <option value="pantryItems">Pantry Items</option>
+            <option value="preparedFoods">Prepared Foods</option>
+            <option value="snacks">Snacks</option>
+            <option value="showAll">Show all</option>
+          </select>
+        </form>
+        <form>
+          <label for="productFiltering">Filtering</label>
+          <select name="productFiltering" id="productFiltering">
+            <option value="aToz">A to Z</option>
+            <option value="zToa">Z to A</option>
+            <option value="lessThan10">Less than 10$</option>
+            <option value="greaterThan10">Greater than 10$</option>
+            <option value="popular">Popular</option>
+            <option value="notPopular">Not popular</option>
+            <option value="showAll">Show all</option>
+          </select>
+        </form>
 
-            <form>
-              <label>
-                Product name
-                <input
-                  placeholder="Search for anything"
-                  type="text"
-                  name="nameProduct"
-                />
-              </label>
-              <button type="submit">
-                <svg width="36" height="36">
-                  <use href="./images/icons/symbol-defs.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
-            <form>
-              <label for="filterCategories"
-                >Filter Categories
-                <select name="filterCategories" id="filterCategories">
-                  <option value="beverages">Beverages</option>
-                  <option value="breads_bakery">Breads / Bakery</option>
-                  <option value="dairy">Dairy</option>
-                  <option value="deli">Deli</option>
-                  <option value="eggs">Eggs</option>
-                  <option value="freshProduce">Fresh Produce</option>
-                  <option value="meatSeafood">Meat & Seafood</option>
-                  <option value="pantryItems">Pantry Items</option>
-                  <option value="preparedFood">Prepared Foods</option>
-                  <option value="snacks">Snacks</option>
-                  <option value="showAll">Show all</option>
-                </select>
-              </label>
-            </form>
-            <form>
-              <label for="sortedProducts">
-                <select name="sortedProducts" id="sortedProducts">
-                  <option value="aToZ">A to Z</option>
-                  <option value="zToA">Z to A</option>
-                  <option value="lessThan10">Less than 10$</option>
-                  <option value="greaterThan10">Greater than 10$</option>
-                  <option value="popular">Popular</option>
-                  <option value="notPopular">Not popular</option>
-                  <option value="showAll">Show all</option>
-                </select>
-              </label>
-            </form>
-          </div>
-        </div>
+        <h3>Product card</h3>
       </section>
-      <section><div></div></section>
-      <section><div></div></section>
     </main>
-    <footer><div></div></footer>
   </body>
 </html>
