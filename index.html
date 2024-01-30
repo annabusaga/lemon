@@ -10,6 +10,17 @@
   <body>
     <header class="page-header">
       <nav class="page-navigation">
+        <a class="logo-img-link" href="./index.html">
+          <svg>
+            <use
+              fill="green"
+              width="36"
+              height="36"
+              href="./images/icons/symbol-defs.svg#icon-cart"
+            ></use>
+            <span class="logo-secondary-text">Cart(3)</span>
+          </svg>
+        </a>
         <a class="logo-text-link link" href="./index.html">
           <span class="logo-main-text">Food Boutique</span>
           <svg class="logo-image">
@@ -19,17 +30,6 @@
               height="36"
               href="./images/icons/symbol-defs.svg#icon-tdesign_cabbage"
             ></use>
-          </svg>
-        </a>
-        <a class="logo-img-link" href="">
-          <svg>
-            <use
-              fill="green"
-              width="36"
-              height="36"
-              href="./images/icons/symbol-defs.svg#icon-cart"
-            ></use>
-            <span class="logo-secondary-text">Cart(3)</span>
           </svg>
         </a>
       </nav>
@@ -134,12 +134,9 @@
               alt="Avocado"
             />
             <h4>Avocado</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>Each</p>
-            <p>Popularity:</p>
-            <p>0</p>
+            <p>Category: <span>Fresh Produce </span></p>
+            <p>Size: <span>Each</span></p>
+            <p>Popularity:<span> 0</span></p>
             <p>$1.99</p>
             <button class="product-card-button" type="button">
               <svg class="product-card-icone">
@@ -158,12 +155,9 @@
               alt="Baby Plum Tomatoes"
             />
             <h4>Baby Plum Tomatoes</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>200 g</p>
-            <p>Popularity:</p>
-            <p>0</p>
+            <p>Category:<span> Fresh Produce</span></p>
+            <p>Size:<span> 200 g</span></p>
+            <p>Popularity:<span> 0</span></p>
             <p>$3.99</p>
             <button type="button">
               <svg>
@@ -179,12 +173,9 @@
           <li class="product-card-item">
             <img src="./images/product/products_card/banana.png" alt="banana" />
             <h4>Banana</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>1 piece</p>
-            <p>Popularity:</p>
-            <p>0</p>
+            <p>Category:<span> Fresh Produce</span></p>
+            <p>Size: <span>1 piece</span></p>
+            <p>Popularity:<span> 0</span></p>
             <p>$0.69</p>
             <button type="button">
               <svg>
@@ -473,9 +464,16 @@
             </svg>
             <h4>Apricot</h4>
             <p>$0.79</p>
-            <bnt>
-              <svg></svg>
-            </bnt>
+            <button type="button">
+              <svg>
+                <use
+                  fill="green"
+                  width="36"
+                  height="36"
+                  href="./images/icons/symbol-defs.svg#icon-buy"
+                ></use>
+              </svg>
+            </button>
           </li>
           <li class="discount-products-item">
             <img
@@ -492,7 +490,7 @@
             </svg>
             <h4>Dark Chocolate</h4>
             <p>$6.99</p>
-            <bnt>
+            <button type="button">
               <svg>
                 <use
                   fill="green"
@@ -501,7 +499,7 @@
                   href="./images/icons/symbol-defs.svg#icon-buy"
                 ></use>
               </svg>
-            </bnt>
+            </button>
           </li>
         </ul>
       </section>
