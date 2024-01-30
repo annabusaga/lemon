@@ -10,20 +10,8 @@
   <body>
     <header class="page-header">
       <nav class="page-navigation">
-        <a class="logo-img-link" href="./index.html">
-          <svg>
-            <use
-              fill="green"
-              width="36"
-              height="36"
-              href="./images/icons/symbol-defs.svg#icon-cart"
-            ></use>
-            <span class="logo-secondary-text">Cart(3)</span>
-          </svg>
-        </a>
-        <a class="logo-text-link link" href="./index.html">
-          <span class="logo-main-text">Food Boutique</span>
-          <svg class="logo-image">
+        <a class="logo link" href="./index.html">
+          <svg class="logo-icon">
             <use
               fill="green"
               width="36"
@@ -31,30 +19,43 @@
               href="./images/icons/symbol-defs.svg#icon-tdesign_cabbage"
             ></use>
           </svg>
+
+          <span class="logo-text">Food Boutique</span>
+        </a>
+
+        <a class="cart-link" href="./index.html">
+          <svg class="cart-link-icon">
+            <use
+              fill="green"
+              width="36"
+              height="36"
+              href="./images/icons/symbol-defs.svg#icon-cart"
+            ></use>
+            <span class="cart-link-text">Cart(3)</span>
+          </svg>
         </a>
       </nav>
     </header>
     <main>
       <!-- hero -->
-      <section>
+      <section class="hero">
         <img
-          class="main-card-img"
-          class=""
+          class="hero-card-img"
           src="./images/hero/hero-girl.jpg"
           alt="Girl eating healthy food"
         />
-        <ul class="main-card-list list">
-          <li class="main-card-item">
-            <p>#food</p>
+        <ul class="hero-card-list list">
+          <li class="hero-card-item">
+            <p class="hero-card-item-text">#food</p>
           </li>
-          <li class="main-card-item">
-            <p class="main-card-text">#products</p>
+          <li class="hero-card-item">
+            <p class="hero-card-item-text">#products</p>
           </li>
         </ul>
-        <p class="main-card-title">
+        <p class="hero-card-text">
           Healthy food is an investment in your future health and well-being.
         </p>
-        <svg class="main-card-label">
+        <svg class="hero-card-icon">
           <use
             fill="green"
             width="36"
@@ -70,23 +71,30 @@
         </p>
         <button class="hero-button" type="button">Start shopping</button>
 
-        <img class="hero-img" src="./images/hero/broccoli.png" alt="Broccoli" />
+        <img
+          class="hero-image"
+          src="./images/hero/broccoli.png"
+          alt="Broccoli"
+        />
       </section>
 
-      <section>
+      <section class="products">
         <h2 class="products-title">Products</h2>
-        <p class="products-text">Filters</p>
+        <p class="products-subtitle">Filters</p>
 
-        <form>
-          <label for="searchProduct">Search product <sup>*</sup></label>
+        <form class="products-search-form">
+          <label class="products-search-form-label" for="searchProduct"
+            >Search product <sup>*</sup></label
+          >
           <input
+            class="products-search-form-input"
             id="searchProduct"
             placeholder="Search for anything"
             type="text"
             name="productName"
           />
-          <button type="submit">
-            <svg>
+          <button class="products-search-form-button" type="submit">
+            <svg class="products-search-form-icon">
               <use
                 fill="green"
                 width="36"
@@ -96,32 +104,76 @@
             </svg>
           </button>
         </form>
-        <form>
-          <label for="productCategory">Sort by category</label>
-          <select name="productCategory" id="productCategory">
-            <option value="beverages">Beverages</option>
-            <option value="breadsBakery">Breads / Bakery</option>
-            <option value="dairy">Dairy</option>
-            <option value="deli">Deli</option>
-            <option value="eggs">Eggs</option>
-            <option value="freshProduce">Fresh Produce</option>
-            <option value="meatSeafood">Meat & Seafood</option>
-            <option value="pantryItems">Pantry Items</option>
-            <option value="preparedFoods">Prepared Foods</option>
-            <option value="snacks">Snacks</option>
-            <option value="showAll">Show all</option>
+        <form class="products-category-form">
+          <label class="products-category-form-label" for="productCategory"
+            >Sort by category</label
+          >
+          <select
+            class="products-category-form-select"
+            name="productCategory"
+            id="productCategory"
+          >
+            <option class="products-category-form-option" value="beverages">
+              Beverages
+            </option>
+            <option class="products-category-form-option" value="breadsBakery">
+              Breads / Bakery
+            </option>
+            <option class="products-category-form-option" value="dairy">
+              Dairy
+            </option>
+            <option class="products-category-form-option" value="deli">
+              Deli
+            </option>
+            <option class="products-category-form-option" value="eggs">
+              Eggs
+            </option>
+            <option class="products-category-form-option" value="freshProduce">
+              Fresh Produce
+            </option>
+            <option class="products-category-form-option" value="meatSeafood">
+              Meat & Seafood
+            </option>
+            <option class="products-category-form-option" value="pantryItems">
+              Pantry Items
+            </option>
+            <option class="products-category-form-option" value="preparedFoods">
+              Prepared Foods
+            </option>
+            <option class="products-category-form-option" value="snacks">
+              Snacks
+            </option>
+            <option class="products-category-form-option" value="showAll">
+              Show all
+            </option>
           </select>
         </form>
-        <form>
-          <label for="productFiltering">Filtering</label>
-          <select name="productFiltering" id="productFiltering">
-            <option value="aToz">A to Z</option>
-            <option value="zToa">Z to A</option>
-            <option value="lessThan10">Less than 10$</option>
-            <option value="greaterThan10">Greater than 10$</option>
-            <option value="popular">Popular</option>
-            <option value="notPopular">Not popular</option>
-            <option value="showAll">Show all</option>
+        <form class="filtering-form">
+          <label class="filtering-form-label" for="productFiltering"
+            >Filtering</label
+          >
+          <select
+            class="filtering-form-select"
+            name="productFiltering"
+            id="productFiltering"
+          >
+            <option class="filtering-form-option" value="aToz">A to Z</option>
+            <option class="filtering-form-option" value="zToa">Z to A</option>
+            <option class="filtering-form-option" value="lessThan10">
+              Less than 10$
+            </option>
+            <option class="filtering-form-option" value="greaterThan10">
+              Greater than 10$
+            </option>
+            <option class="filtering-form-option" value="popular">
+              Popular
+            </option>
+            <option class="filtering-form-option" value="notPopular">
+              Not popular
+            </option>
+            <option class="filtering-form-option" value="showAll">
+              Show all
+            </option>
           </select>
         </form>
 
@@ -159,7 +211,7 @@
             <p>Size:<span> 200 g</span></p>
             <p>Popularity:<span> 0</span></p>
             <p>$3.99</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -177,7 +229,7 @@
             <p>Size: <span>1 piece</span></p>
             <p>Popularity:<span> 0</span></p>
             <p>$0.69</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -201,7 +253,7 @@
             <p>Popularity:</p>
             <p>0</p>
             <p>$3.99</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -225,7 +277,7 @@
             <p>Popularity:</p>
             <p>0</p>
             <p>$3.99</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -249,7 +301,7 @@
             <p>Popularity:</p>
             <p>0</p>
             <p>$1.49</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -273,7 +325,7 @@
             <p>Popularity:</p>
             <p>0</p>
             <p>$1.99</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -297,7 +349,7 @@
             <p>Popularity:</p>
             <p>0</p>
             <p>$0.99</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
@@ -321,7 +373,7 @@
             <p>Popularity:</p>
             <p>0</p>
             <p>$1.99</p>
-            <button type="button">
+            <button class="product-card-button" type="button">
               <svg>
                 <use
                   fill="green"
