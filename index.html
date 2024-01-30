@@ -148,50 +148,95 @@
             </option>
           </select>
         </form>
-        <form class="filtering-form">
-          <label class="filtering-form-label" for="productFiltering"
+        <form class="products-sorting-form">
+          <label class="products-sorting-form-label" for="productFiltering"
             >Filtering</label
           >
           <select
-            class="filtering-form-select"
+            class="products-sorting-form-select"
             name="productFiltering"
             id="productFiltering"
           >
-            <option class="filtering-form-option" value="aToz">A to Z</option>
-            <option class="filtering-form-option" value="zToa">Z to A</option>
-            <option class="filtering-form-option" value="lessThan10">
+            <option class="products-sorting-form-option" value="aToz">
+              A to Z
+            </option>
+            <option class="products-sorting-form-option" value="zToa">
+              Z to A
+            </option>
+            <option class="products-sorting-form-option" value="lessThan10">
               Less than 10$
             </option>
-            <option class="filtering-form-option" value="greaterThan10">
+            <option class="products-sorting-form-option" value="greaterThan10">
               Greater than 10$
             </option>
-            <option class="filtering-form-option" value="popular">
+            <option class="products-sorting-form-option" value="popular">
               Popular
             </option>
-            <option class="filtering-form-option" value="notPopular">
+            <option class="products-sorting-form-option" value="notPopular">
               Not popular
             </option>
-            <option class="filtering-form-option" value="showAll">
+            <option class="products-sorting-form-option" value="showAll">
               Show all
             </option>
           </select>
         </form>
 
-        <h3 class="product-card-title">Product card</h3>
+        <h3 class="product-group-title">Product card</h3>
         <ul class="product-card-list list">
+          <!-- перша лішка -->
+
           <li class="product-card-item">
             <img
               class="product-card-img"
               src="./images/product/products_card/avocado.png"
               alt="Avocado"
             />
-            <h4>Avocado</h4>
-            <p>Category: <span>Fresh Produce </span></p>
-            <p>Size: <span>Each</span></p>
-            <p>Popularity:<span> 0</span></p>
-            <p>$1.99</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg class="product-card-icone">
+              <svg class="product-card-icon">
+                <use
+                  fill="green"
+                  width="36"
+                  height="36"
+                  href="./images/icons/symbol-defs.svg#icon-buy"
+                ></use>
+              </svg>
+            </button>
+          </li>
+
+          <!-- перша лішка -->
+
+          <li class="product-card-item">
+            <img
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
+            />
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
+            <button class="product-card-button" type="button">
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -203,58 +248,24 @@
           </li>
           <li class="product-card-item">
             <img
-              src="./images/product/products_card/tomato.png"
-              alt="Baby Plum Tomatoes"
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
             />
-            <h4>Baby Plum Tomatoes</h4>
-            <p>Category:<span> Fresh Produce</span></p>
-            <p>Size:<span> 200 g</span></p>
-            <p>Popularity:<span> 0</span></p>
-            <p>$3.99</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg>
-                <use
-                  fill="green"
-                  width="36"
-                  height="36"
-                  href="./images/icons/symbol-defs.svg#icon-buy"
-                ></use>
-              </svg>
-            </button>
-          </li>
-          <li class="product-card-item">
-            <img src="./images/product/products_card/banana.png" alt="banana" />
-            <h4>Banana</h4>
-            <p>Category:<span> Fresh Produce</span></p>
-            <p>Size: <span>1 piece</span></p>
-            <p>Popularity:<span> 0</span></p>
-            <p>$0.69</p>
-            <button class="product-card-button" type="button">
-              <svg>
-                <use
-                  fill="green"
-                  width="36"
-                  height="36"
-                  href="./images/icons/symbol-defs.svg#icon-buy"
-                ></use>
-              </svg>
-            </button>
-          </li>
-          <li class="product-card-item">
-            <img
-              src="./images/product/products_card/Beetroot.png"
-              alt="Beetroot"
-            />
-            <h4>Beetroot</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>1 lb</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <p>$3.99</p>
-            <button class="product-card-button" type="button">
-              <svg>
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -266,19 +277,24 @@
           </li>
           <li class="product-card-item">
             <img
-              src="./images/product/products_card/Blueberries.png"
-              alt="Bluberries"
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
             />
-            <h4>Blueberries</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>6 oz</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <p>$3.99</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg>
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -290,19 +306,24 @@
           </li>
           <li class="product-card-item">
             <img
-              src="./images/product/products_card/Butternut Squash.png"
-              alt="Butternut Squash"
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
             />
-            <h4>Butternut Squash</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>Per lb</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <p>$1.49</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg>
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -314,19 +335,24 @@
           </li>
           <li class="product-card-item">
             <img
-              src="./images/product/products_card/Cabbage.png"
-              alt="Cabbage"
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
             />
-            <h4>Cabbage</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>Per head</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <p>$1.99</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg>
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -338,19 +364,24 @@
           </li>
           <li class="product-card-item">
             <img
-              src="./images/product/products_card/Carrots.png"
-              alt="Carrots"
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
             />
-            <h4>Carrots</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>1 lb</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <p>$0.99</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg>
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -362,19 +393,53 @@
           </li>
           <li class="product-card-item">
             <img
-              src="./images/product/products_card/Challots.png"
-              alt="Challots"
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
             />
-            <h4>Challots</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>0.5lb</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <p>$1.99</p>
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
             <button class="product-card-button" type="button">
-              <svg>
+              <svg class="product-card-icon">
+                <use
+                  fill="green"
+                  width="36"
+                  height="36"
+                  href="./images/icons/symbol-defs.svg#icon-buy"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <li class="product-card-item">
+            <img
+              class="product-card-img"
+              src="./images/product/products_card/avocado.png"
+              alt="Avocado"
+            />
+            <h4 class="product-card-title">Avocado</h4>
+            <p class="product-card-property">
+              Category:
+              <span class="product-card-property-value">Fresh Produce </span>
+            </p>
+            <p class="product-card-property">
+              Size: <span class="product-card-property-value">Each</span>
+            </p>
+            <p class="product-card-property">
+              Popularity:<span class="product-card-property-value"> 0</span>
+            </p>
+            <p class="product-card-price">$1.99</p>
+            <button class="product-card-button" type="button">
+              <svg class="product-card-icon">
                 <use
                   fill="green"
                   width="36"
@@ -385,7 +450,8 @@
             </button>
           </li>
         </ul>
-        <h3 class="popular-products-title">Popular products</h3>
+
+        <h3 class="product-group-title">Popular products</h3>
         <ul class="popular-products-list list">
           <li class="popular-products-item">
             <img
@@ -393,15 +459,21 @@
               src="./images/product/popular_products/Ackee.png"
               alt="Ackee"
             />
-            <h4>Ackee</h4>
-            <p>Category:</p>
-            <p>Fresh Produce</p>
-            <p>Size:</p>
-            <p>16 oz</p>
-            <p>Popularity:</p>
-            <p>3</p>
+            <h4 class="popular-products-title">Ackee</h4>
+            <p class="popular-products-property">
+              Category:
+              <span class="popular-products-property-value"
+                >Fresh Produce
+              </span>
+            </p>
+            <p class="popular-products-property">
+              Size: <span class="popular-products-property-value">16 oz </span>
+            </p>
+            <p class="popular-products-property">
+              Popularity: <span class="popular-products-property-value">3</span>
+            </p>
             <button class="popular-products-button" type="button">
-              <svg class="popular-products-icone">
+              <svg class="popular-products-icon">
                 <use
                   fill="green"
                   width="36"
@@ -413,18 +485,25 @@
           </li>
           <li class="popular-products-item">
             <img
-              src="./images/product/popular_products/Chicken.png"
-              alt="Chicken"
+              class="popular-products-image"
+              src="./images/product/popular_products/Ackee.png"
+              alt="Ackee"
             />
-            <h4>Chicken</h4>
-            <p>Category:</p>
-            <p>Meat & Seafood</p>
-            <p>Size:</p>
-            <p>1.5 kg</p>
-            <p>Popularity:</p>
-            <p>2</p>
-            <button type="button">
-              <svg>
+            <h4 class="popular-products-title">Ackee</h4>
+            <p class="popular-products-property">
+              Category:
+              <span class="popular-products-property-value"
+                >Fresh Produce
+              </span>
+            </p>
+            <p class="popular-products-property">
+              Size: <span class="popular-products-property-value">16 oz </span>
+            </p>
+            <p class="popular-products-property">
+              Popularity: <span class="popular-products-property-value">3</span>
+            </p>
+            <button class="popular-products-button" type="button">
+              <svg class="popular-products-icon">
                 <use
                   fill="green"
                   width="36"
@@ -436,18 +515,25 @@
           </li>
           <li class="popular-products-item">
             <img
-              src="./images/product/popular_products/Salmon.png"
-              alt="Salmon"
+              class="popular-products-image"
+              src="./images/product/popular_products/Ackee.png"
+              alt="Ackee"
             />
-            <h4>Salmon</h4>
-            <p>Category:</p>
-            <p>Meat & Seafood</p>
-            <p>Size:</p>
-            <p>1 kg</p>
-            <p>Popularity:</p>
-            <p>1</p>
-            <button type="button">
-              <svg>
+            <h4 class="popular-products-title">Ackee</h4>
+            <p class="popular-products-property">
+              Category:
+              <span class="popular-products-property-value"
+                >Fresh Produce
+              </span>
+            </p>
+            <p class="popular-products-property">
+              Size: <span class="popular-products-property-value">16 oz </span>
+            </p>
+            <p class="popular-products-property">
+              Popularity: <span class="popular-products-property-value">3</span>
+            </p>
+            <button class="popular-products-button" type="button">
+              <svg class="popular-products-icon">
                 <use
                   fill="green"
                   width="36"
@@ -459,18 +545,25 @@
           </li>
           <li class="popular-products-item">
             <img
-              src="./images/product/popular_products/Allspice.png"
-              alt="Allspice"
+              class="popular-products-image"
+              src="./images/product/popular_products/Ackee.png"
+              alt="Ackee"
             />
-            <h4>Allspice</h4>
-            <p>Category:</p>
-            <p>Pantry Items</p>
-            <p>Size:</p>
-            <p>1.5oz</p>
-            <p>Popularity:</p>
-            <p>1</p>
-            <button type="button">
-              <svg>
+            <h4 class="popular-products-title">Ackee</h4>
+            <p class="popular-products-property">
+              Category:
+              <span class="popular-products-property-value"
+                >Fresh Produce
+              </span>
+            </p>
+            <p class="popular-products-property">
+              Size: <span class="popular-products-property-value">16 oz </span>
+            </p>
+            <p class="popular-products-property">
+              Popularity: <span class="popular-products-property-value">3</span>
+            </p>
+            <button class="popular-products-button" type="button">
+              <svg class="popular-products-icon">
                 <use
                   fill="green"
                   width="36"
@@ -481,17 +574,26 @@
             </button>
           </li>
           <li class="popular-products-item">
-            <img src="./images/product/popular_products/Beef.png" alt="Beef" />
-            <h4>Beef</h4>
-            Category:
-            <p>Category:</p>
-            <p>Meat & Seafood</p>
-            <p>Size:</p>
-            <p>2 kg</p>
-            <p>Popularity:</p>
-            <p>0</p>
-            <button type="button">
-              <svg>
+            <img
+              class="popular-products-image"
+              src="./images/product/popular_products/Ackee.png"
+              alt="Ackee"
+            />
+            <h4 class="popular-products-title">Ackee</h4>
+            <p class="popular-products-property">
+              Category:
+              <span class="popular-products-property-value"
+                >Fresh Produce
+              </span>
+            </p>
+            <p class="popular-products-property">
+              Size: <span class="popular-products-property-value">16 oz </span>
+            </p>
+            <p class="popular-products-property">
+              Popularity: <span class="popular-products-property-value">3</span>
+            </p>
+            <button class="popular-products-button" type="button">
+              <svg class="popular-products-icon">
                 <use
                   fill="green"
                   width="36"
@@ -502,11 +604,11 @@
             </button>
           </li>
         </ul>
-        <h3 class="discount-products-title">Discount products</h3>
+        <h3 class="product-group-title">Discount products</h3>
         <ul class="discount-products-list list">
           <li class="discount-products-item">
             <img class="discount-products-image" src="" alt="" />
-            <svg>
+            <svg class="discount-products-icon">
               <use
                 fill="green"
                 width="36"
@@ -514,10 +616,10 @@
                 href="./images/icons/symbol-defs.svg#icon-discount"
               ></use>
             </svg>
-            <h4>Apricot</h4>
-            <p>$0.79</p>
-            <button type="button">
-              <svg>
+            <h4 class="discount-products-title">Apricot</h4>
+            <p class="discount-products-price">$0.79</p>
+            <button class="discount-products-button" type="button">
+              <svg class="discount-products-button-icon">
                 <use
                   fill="green"
                   width="36"
@@ -528,11 +630,8 @@
             </button>
           </li>
           <li class="discount-products-item">
-            <img
-              src="./images/product/discount_products/Dark Chocolate.png"
-              alt="Dark Chocolate"
-            />
-            <svg>
+            <img class="discount-products-image" src="" alt="" />
+            <svg class="discount-products-icon">
               <use
                 fill="green"
                 width="36"
@@ -540,10 +639,10 @@
                 href="./images/icons/symbol-defs.svg#icon-discount"
               ></use>
             </svg>
-            <h4>Dark Chocolate</h4>
-            <p>$6.99</p>
-            <button type="button">
-              <svg>
+            <h4 class="discount-products-title">Apricot</h4>
+            <p class="discount-products-price">$0.79</p>
+            <button class="discount-products-button" type="button">
+              <svg class="discount-products-button-icon">
                 <use
                   fill="green"
                   width="36"
