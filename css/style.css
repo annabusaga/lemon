@@ -34,6 +34,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -46,6 +48,20 @@ img {
 
 button {
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header {
@@ -126,6 +142,7 @@ button {
 
 .hero {
   padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .hero-container {
@@ -140,9 +157,13 @@ button {
 }
 
 .hero-card-img {
+  margin-bottom: 14px;
 }
 
 .hero-card-list {
+  display: flex;
+  column-gap: 4px;
+  margin-bottom: 20px;
 }
 
 .list {
@@ -153,6 +174,9 @@ button {
 }
 
 .hero-card-item {
+  border: 1px solid rgba(1, 1, 1, 0.3);
+  border-radius: 30px;
+  padding: 8px 20px;
 }
 
 .hero-card-item-text {
@@ -169,6 +193,8 @@ button {
 }
 
 .hero-card-icon {
+  width: 100px;
+  height: 100px;
 }
 
 .hero-title {
@@ -209,6 +235,8 @@ button {
 }
 
 .products {
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .products-title {
@@ -218,6 +246,10 @@ button {
   font-size: 14px;
   line-height: 1.28571;
   color: var(--main-transparent-dark-color);
+}
+
+.forms-wrapper {
+  margin-bottom: 40px;
 }
 
 .products-search-form {
@@ -263,12 +295,18 @@ button {
 }
 
 .product-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .list {
 }
 
 .product-card-item {
+  background-color: var(--main-light-color);
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .product-card-img {
@@ -279,12 +317,15 @@ button {
   font-size: 18px;
   line-height: 1.11111;
   color: var(--main-dark-color);
+  margin-bottom: 10px;
 }
 
 .product-card-property {
   font-size: 12px;
   line-height: 1.16667;
   color: rgba(1, 1, 1, 0.3);
+  display: flex;
+  gap: 4px;
 }
 
 .product-card-property-value {
@@ -302,9 +343,43 @@ button {
 }
 
 .product-card-button {
+  background-color: var(--color-accent);
+  border-radius: 30px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card-icon {
+  fill: var(--main-background-color);
+  width: 18px;
+  height: 18px;
+}
+
+.product-card-image-wrapper {
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-info-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.product-buy-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .popular-products-list {
