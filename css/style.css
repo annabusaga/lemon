@@ -483,6 +483,9 @@ button {
 }
 
 .discount-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .discount-products-item {
@@ -535,4 +538,32 @@ button {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.discount-products-wrapper {
+  background-color: var(--main-light-color);
+  border-radius: 15px;
+  width: 335px;
+  height: 232px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.discount-products-image-wrapper {
+  border-radius: 10px;
+  width: 304px;
+  height: 150px;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.discount-products-info {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: baseline;
 }
