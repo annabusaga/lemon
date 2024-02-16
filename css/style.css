@@ -292,6 +292,7 @@ button {
 }
 
 .product-group-title {
+  margin-bottom: 20px;
 }
 
 .product-card-list {
@@ -504,6 +505,7 @@ button {
   font-size: 18px;
   line-height: 1.11111;
   color: var(--main-dark-color);
+  margin-right: 92px;
 }
 
 .discount-products-price {
@@ -511,6 +513,7 @@ button {
   font-size: 18px;
   line-height: 1.11111;
   color: var(--main-dark-color);
+  margin-right: 8px;
 }
 
 .discount-products-button {
@@ -548,6 +551,7 @@ button {
   padding-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
+  gap: 20px;
 }
 
 .discount-products-image-wrapper {
