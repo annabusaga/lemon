@@ -383,6 +383,9 @@ button {
 }
 
 .popular-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .popular-products-item {
@@ -396,6 +399,21 @@ button {
   font-size: 18px;
   line-height: 1.11111;
   color: var(--main-dark-color);
+  margin-bottom: 12px;
+}
+
+.popular-products-category {
+  margin-bottom: 9px;
+  gap: 4px;
+}
+.popular-products-popularity {
+  display: flex;
+  gap: 4px;
+}
+
+.popular-products-size {
+  display: flex;
+  gap: 4px;
 }
 
 .popular-products-property {
@@ -414,12 +432,54 @@ button {
   font-size: 24px;
   line-height: 1.16667;
   color: var(--main-dark-color);
+  margin-bottom: 20px;
+  margin-top: 80px;
 }
 
 .popular-products-button {
+  border-radius: 30px;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+
+  border: none;
+  background-color: var(--main-background-color);
 }
 
 .popular-products-icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--color-accent);
+}
+
+.popular-products-wrapper {
+  background-color: var(--main-light-color);
+  border-radius: 10px;
+  width: 335px;
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.popular-products-image-wrapper {
+  background-color: var(--main-background-color);
+  border-radius: 10px;
+  width: 74px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.popular-products-info {
+  margin-right: 55px;
+}
+
+.popular-products-size-category-wrapper {
+  display: flex;
+  gap: 9px;
 }
 
 .discount-products-list {
