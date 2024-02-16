@@ -492,6 +492,8 @@ button {
 }
 
 .discount-products-icon {
+  width: 60px;
+  height: 60px;
 }
 
 .discount-products-title {
@@ -509,9 +511,22 @@ button {
 }
 
 .discount-products-button {
+  border-radius: 30px;
+  /* padding: 8px; */
+  width: 34px;
+  height: 34px;
+  display: flex;
+  /* padding: 8px; */
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent);
+  border: none;
 }
 
 .discount-products-button-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-background-color);
 }
 
 .container {
