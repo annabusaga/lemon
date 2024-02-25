@@ -42,14 +42,48 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
     </header>
     <main>
       <!-- hero -->
+
+      <!-- <form class="main-form">
+        <label for="userName">Name</label>
+        <input type="text" id="userName" name="userName" placeholder="Jhon" />
+
+        <fieldset>
+          <legend>Choose color</legend>
+
+          <label for="green">Green</label>
+          <input type="radio" id="green" name="color" value="green" />
+
+          <label for="red">Red</label>
+          <input type="radio" id="red" name="color" value="red" />
+
+          <label for="blue">Blue</label>
+          <input type="radio" id="blue" name="color" value="blue" />
+        </fieldset>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form> -->
+
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-card">
-            <img
-              class="hero-card-img"
-              src="./images/hero/hero-girl.jpg"
-              alt="Girl eating healthy food"
-            />
+            <div class="hero-card-img-wrapper">
+              <img
+                class="hero-card-img"
+                src="./images/hero/hero-girl.jpg"
+                alt="Girl eating healthy food"
+              />
+              <svg class="hero-card-icon">
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-organic-food"
+                ></use>
+              </svg>
+            </div>
             <ul class="hero-card-list list">
               <li class="hero-card-item">
                 <p class="hero-card-item-text">#food</p>
@@ -62,11 +96,6 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
               Healthy food is an investment in your future health and
               well-being.
             </p>
-            <svg class="hero-card-icon">
-              <use
-                href="./images/icons/symbol-defs.svg#icon-organic-food"
-              ></use>
-            </svg>
           </div>
           <div class="hero-title-wrapper">
             <h1 class="hero-title">Welcome to the Food Boutique!</h1>
@@ -92,26 +121,27 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
             <p class="products-subtitle">Filters</p>
 
             <form class="products-search-form">
-              <label class="products-search-form-label" for="searchProduct"
+              <label
+                class="products-search-form-label visually-hidden"
+                for="searchProduct"
                 >Search product <sup>*</sup></label
               >
-              <input
-                class="products-search-form-input"
-                id="searchProduct"
-                placeholder="Search for anything"
-                type="text"
-                name="productName"
-              />
-              <button class="products-search-form-button" type="submit">
-                <svg class="products-search-form-icon">
-                  <use
-                    fill="green"
-                    width="36"
-                    height="36"
-                    href="./images/icons/symbol-defs.svg#icon-search"
-                  ></use>
-                </svg>
-              </button>
+              <div class="products-search-form-input-wrapper">
+                <input
+                  class="products-search-form-input"
+                  id="searchProduct"
+                  placeholder="Search for anything"
+                  type="text"
+                  name="productName"
+                />
+                <button class="products-search-form-button" type="submit">
+                  <svg class="products-search-form-icon">
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-search"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
             </form>
             <form class="products-category-form">
               <label class="products-category-form-label" for="productCategory"
@@ -738,12 +768,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                     src="./images/product/products_card/tomato.png"
                     alt="Tomato"
                   />
+                  <svg class="discount-products-icon">
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-discount"
+                    ></use>
+                  </svg>
                 </div>
-                <svg class="discount-products-icon visually-hidden">
-                  <use
-                    href="./images/icons/symbol-defs.svg#icon-discount"
-                  ></use>
-                </svg>
+
                 <div class="discount-products-info">
                   <h4 class="discount-products-title">Apricot</h4>
                   <p class="discount-products-price">$0.79</p>
@@ -755,7 +786,6 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                 </div>
               </div>
             </li>
-
             <li class="discount-products-item">
               <div class="discount-products-wrapper">
                 <div class="discount-products-image-wrapper">
@@ -764,12 +794,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                     src="./images/product/products_card/tomato.png"
                     alt="Tomato"
                   />
+                  <svg class="discount-products-icon">
+                    <use
+                      href="./images/icons/symbol-defs.svg#icon-discount"
+                    ></use>
+                  </svg>
                 </div>
-                <svg class="discount-products-icon visually-hidden">
-                  <use
-                    href="./images/icons/symbol-defs.svg#icon-discount"
-                  ></use>
-                </svg>
+
                 <div class="discount-products-info">
                   <h4 class="discount-products-title">Apricot</h4>
                   <p class="discount-products-price">$0.79</p>
